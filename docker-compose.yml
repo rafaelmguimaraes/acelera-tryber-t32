@@ -9,3 +9,13 @@ services:
       - 3000:3000
     volumes:
       - ./:/app
+    env_file: .env
+  db:
+    image: mysql:8.0.32
+    container_name: review_db
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQLPASSWORD}

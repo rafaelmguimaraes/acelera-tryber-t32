@@ -1,3 +1,7 @@
 # GET 
-
 GET http://localhost:3000/health
+
+###
+
+# GET Test Database
+GET http://localhost:3000/testDatabase
