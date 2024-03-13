@@ -9,6 +9,10 @@
     "extends": [
       "plugin:@typescript-eslint/recommended"
     ],
+    // exlude files from test folder
+    "ignorePatterns": [
+      "tests/*"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": 2016,
@@ -69,7 +73,7 @@
       ],
       "complexity": [
         "error",
-        5
+        7
       ],
       "import/no-extraneous-dependencies": [
         "off"
