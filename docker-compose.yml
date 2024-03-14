@@ -12,6 +12,7 @@ services:
     env_file: .env
   db:
     image: mysql:8.0.32
+    command: --default-authentication-plugin=mysql_native_password
     container_name: review_db
     restart: unless-stopped
     env_file: .env

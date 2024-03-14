@@ -5,7 +5,7 @@ import * as routers from './routes';
 const app = express();
 app.use(express.json());
 
-app.get('/health', (_req, res) => res.status(200).send({message: 'Olá Turma 32!'}))
+app.get('/', (_req, res) => res.status(200).send({message: 'Olá Turma 32!'}))
 
 app.use('/characters', routers.characterRouter);
 app.use('/casts', routers.castRouter);
