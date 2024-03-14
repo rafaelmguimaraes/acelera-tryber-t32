@@ -4,7 +4,7 @@ import Cast from '../interfaces/cast';
 import { SimpleModel } from './model';
 const DATABASE = 'cartoon';
 export default class CastModel implements SimpleModel<Cast> {
-  constructor(private tableName: string = 'Characters', 
+  constructor(private tableName: string = 'Casts', 
     private connection = conn) { }
 
   async create(obj: Cast) {
